@@ -38,6 +38,7 @@ body {
 	font-weight: 600;
 	border-radius: 5px;
 	transition: all 0.7s ease;
+	background-color: #fd8cf4;
 }
 .btn:hover {
 	background-color: #03ef62;
@@ -76,11 +77,11 @@ body {
     padding:50px 100px;
 }
 .Hero_details {
-	width: 45%;
+	width: 55%;
 	height: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .Hero_details p{
 	color:rgb(236, 69, 208);
@@ -92,4 +93,39 @@ body {
 #Learners_img {
 	width: 40%;
 	height: 70%;
+}
+
+@media(max-width:900px){
+	.Hero_section{
+		padding:50px;
+	}
+}
+@media(max-width:600px){
+	.Hero_section{
+		flex-direction: column-reverse;
+		justify-content: space-evenly;
+		padding:30px;
+	}
+	.Hero_details{
+		width:100%;
+		height:25%;
+	}
+	.Hero_details h1{
+		font-size: 2rem;
+	}
+	#Learners_img{
+		width:100%;
+		height:35%;
+	}
+	.header{
+		padding:20px;
+	}
+	.header h1{
+		font-size: 1rem;
+	}
+}
+@media(max-width:400px){
+	.Hero_details h1{
+		font-size: 1.5rem;
+	}
 }
