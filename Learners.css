@@ -97,14 +97,14 @@ body {
 
 @media(max-width:900px){
 	.Hero_section{
-		padding:50px;
+		padding:30px;
 	}
 }
-@media(max-width:700px){
+@media(max-width:750px){
 	.Hero_section{
 		flex-direction: column-reverse;
 		justify-content: space-evenly;
-		padding:30px;
+	
 	}
 	.Hero_details{
 		width:100%;
