@@ -100,7 +100,7 @@ body {
 		padding:50px;
 	}
 }
-@media(max-width:600px){
+@media(max-width:700px){
 	.Hero_section{
 		flex-direction: column-reverse;
 		justify-content: space-evenly;
