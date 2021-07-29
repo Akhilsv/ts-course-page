@@ -18,6 +18,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: sticky;
+	top:0;
+	background-color:#3F3D56;
 }
 .header h1 {
 	letter-spacing: 2px;
@@ -63,4 +66,30 @@ body {
 	min-width: 300px;
 	height: 500px;
 	background-color: yellow;
+}
+.Hero_section {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    padding:50px 100px;
+}
+.Hero_details {
+	width: 45%;
+	height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Hero_details p{
+	color:rgb(236, 69, 208);
+}
+.Hero_details h1{
+    color:rgb(240, 240, 240);
+    font-size: 2.5rem;
+}
+#Learners_img {
+	width: 40%;
+	height: 70%;
 }
