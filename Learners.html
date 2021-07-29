@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech snap</title>
-    <link href="Learners.css" rel="stylesheet" >
-</head>
-<body>
-    <section class="header">
-        <h1>TECH SNAP</h1>
-        <button class="btn">Get Started</button>
-    </section>
-</body>
+	<head>
+		<!-- Aos styled_link -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tech snap</title>
+		<link href="Learners.css" rel="stylesheet" />
+	</head>
+	<body>
+		<section class="header" data-aos="flip-right">
+			<h1>TECH SNAP</h1>
+			<button class="btn">Get Started</button>
+		</section>
+		<div class="mainCard_Section">
+			<div class="card_Container">
+				<div class="card">1</div>
+				<div class="card">2</div>
+				<div class="card">3</div>
+			</div>
+		</div>
+		<!-- script files link here -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 900,
+			});
+		</script>
+	</body>
 </html>
