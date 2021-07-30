@@ -47,7 +47,6 @@ body {
 .mainCard_Section {
 	width: 100%;
 	height: 100vh;
-	background-color: aqua;
 	display: grid;
 	place-items: center;
 }
@@ -55,8 +54,7 @@ body {
 	width: 100%;
 	max-width: 90%;
 	min-width: 300px;
-	height: 500px;
-	background-color: pink;
+	height: fit-content;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -67,9 +65,59 @@ body {
 	max-width: 350px;
 	min-width: 300px;
 	height: 500px;
-	background-color: yellow;
+	background-color: #f6f6f6;
 	position: relative;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 20px 0;
 }
+.card_Title{
+	height: 260px;
+	display: grid;
+	place-items: center;
+}
+.card_Title h1{
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: #05192D;
+}
+.card_Details{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 180px;
+}
+.card_More{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px;
+	height: fit-content;
+}
+.card_Edu p{
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	font-weight: 500;
+	color: #3F3D56;
+	line-height: 1.5rem;
+
+}
+.card_More h3{
+	font-size: 1.2rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+.card_More img{
+	width: 10px;
+	transition: all 0.6s ease ;
+
+}
+.card_More:hover img{
+	transform: translateX(8px);
+}
+
 .card #card_Avatar{
 	position: absolute;
 	width: 80px;
@@ -103,7 +151,4 @@ body {
 #Learners_img {
 	width: 40%;
 	height: 70%;
-}
-.card_Details {
-
 }
