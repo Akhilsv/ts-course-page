@@ -70,6 +70,24 @@ body {
 	padding: 10px;
 	border-radius: 8px;
 	margin: 20px 0;
+	z-index: 2;
+	overflow: hidden;
+}
+.card::before{
+	content: '';
+	width: 50px;
+	height: 50px;
+	background-color: #03ef62;
+	position: absolute;
+	top: -25px;
+	right: -25px;
+	border-radius: 50%;
+	transition:all 0.8s ease;
+	z-index: 0;
+}
+.card:hover.card::before{
+	transform: scale(25);
+	z-index: -1;
 }
 .card_Title{
 	height: 260px;
