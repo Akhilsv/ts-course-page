@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
 		<title>Tech snap</title>
 		<link href="Learners.css" rel="stylesheet" />
 	</head>
@@ -13,11 +13,12 @@
 		<section
 			class="header"
 			
+			
 		>
 			<h1>TECH SNAP</h1>
 			<button class="btn">Get Started</button>
 		</section>
-		<div class="Hero_section">
+		<div class="Hero_section" id='top'>
 			<div class="Hero_details" data-aos="fade-right"  offset: 180>
 				<p>READ THEIR STORIES</p>
 				<h1>Meet 8,720,000+ DataCamp learners</h1>
@@ -215,15 +216,33 @@
 			</div>
 		</div>
 		<!-- Main Conatiner ------------------------------------------------------------------------------------------------ -->
+<!-- footer region--------------------------------------------------------------- -->
+<footer class="Footer_conatiner">
 
+</footer>
+<div class="Scroll">
+ <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">&#9757</a>
+</div>
 		<!-- script files link here -->
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
+			// Animation------------------------------------
 			AOS.init({
 				duration: 900,
 				offset: 220,
 				easing: 'ease-in-out-quad'
 			});
+          //-----scroll-----------------
+window.addEventListener('scroll', () => {
+		const top = window.innerHeight * (10 / 100)+300;
+		if (window.scrollY <= top) {
+			document.querySelector(".Scroll").style.display='none';
+		
+		}
+		if (window.scrollY > top) {
+				document.querySelector(".Scroll").style.display='grid';
+		}
+	});
 		</script>
 	</body>
 </html>
