@@ -218,6 +218,9 @@ body {
 .Scroll:hover{
 	transform: scale(1.1);
 }
+.Scroll a{
+	text-decoration: none;
+}
 
 @media(max-width:900px){
 	.Hero_section{
