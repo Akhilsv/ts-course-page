@@ -71,7 +71,6 @@ body {
 	border-radius: 8px;
 	margin: 20px 0;
 	z-index: 2;
-	overflow: hidden;
 }
 .card::before{
 	content: '';
@@ -79,14 +78,17 @@ body {
 	height: 50px;
 	background-color: #03ef62;
 	position: absolute;
-	top: -25px;
-	right: -25px;
-	border-radius: 50%;
+	top: 0;
+	right: 0;
+	border-bottom-left-radius: 100%;
+	border-bottom-left-radius: 100%;
 	transition:all 0.8s ease;
 	z-index: 0;
 }
 .card:hover.card::before{
-	transform: scale(25);
+
+	width:55%;
+	height:55%;
 	z-index: -1;
 }
 .card_Title{
