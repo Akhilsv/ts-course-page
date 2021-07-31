@@ -36,6 +36,27 @@ html {
 	letter-spacing: 2px;
 	color: rgb(247, 247, 247);
 }
+.navItems{
+	width:fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navItems a{
+	text-decoration: none;
+	color:#ffffff;
+	transition: all 0.5s ease;
+	font-weight: 500;
+	white-space: nowrap;
+	margin: 0 25px;
+
+}
+.Ham{
+	display: none;
+}
+.navItems a:hover{
+	color: rgb(236, 69, 208);
+}
 body {
 	background-color: rgb(0, 0, 0);
 }
@@ -469,6 +490,14 @@ hr{
 	.Social-media {
 		width:50%;
 	}
+}
+@media(max-width:600px){
+	.navItems{
+		display: none;
+}
+.Ham{
+	display: block;
+}
 }
 @media (max-width: 400px) {
 	.Hero_details h1 {
