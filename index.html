@@ -335,7 +335,8 @@
 				easing: 'ease-in-out-quad'
 			});
           //-----scroll-----------------
-window.addEventListener('scroll', () => {
+		  const ham = document.querySelector('.Ham');
+			window.addEventListener('scroll', () => {
 		const top = window.innerHeight * (10 / 100)+300;
 		if (window.scrollY <= top) {
 			document.querySelector(".Scroll").style.display='none';
@@ -345,6 +346,9 @@ window.addEventListener('scroll', () => {
 				document.querySelector(".Scroll").style.display='grid';
 		}
 	});
+		ham.addEventListener('click',() => {
+			console.log('clicking');
+		})
 		</script>
 	</body>
 </html>
