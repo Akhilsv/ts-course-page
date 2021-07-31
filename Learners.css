@@ -7,6 +7,7 @@
 	-webkit-touch-callout: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	/* mobile touch-action */
+	scroll-behavior: smooth;
 }
 *::-webkit-scrollbar {
 	display: none;
@@ -21,6 +22,7 @@
 	position: sticky;
 	top:0;
 	background-color:#3F3D56;
+	z-index: 5;
 }
 .header h1 {
 	letter-spacing: 2px;
@@ -45,8 +47,7 @@ body {
 }
 .mainCard_Section {
 	width: 100%;
-	height: 100vh;
-	background-color: aqua;
+	height: 100%;
 	display: grid;
 	place-items: center;
 }
@@ -54,8 +55,7 @@ body {
 	width: 100%;
 	max-width: 90%;
 	min-width: 300px;
-	height: 500px;
-	background-color: pink;
+	height: fit-content;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -66,7 +66,98 @@ body {
 	max-width: 350px;
 	min-width: 300px;
 	height: 500px;
-	background-color: yellow;
+	background-color: #f6f6f6;
+	position: relative;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 20px 0;
+	z-index: 2;
+}
+.card::before{
+	content: '';
+	width: 50px;
+	height: 50px;
+	background-color: #03ef62;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-bottom-left-radius: 100%;
+	border-bottom-left-radius: 100%;
+	transition:all 0.8s ease;
+	z-index: 0;
+}
+.card:hover.card::before{
+
+	width:55%;
+	height:55%;
+	z-index: -1;
+}
+.card_Title{
+	height: 260px;
+	display: grid;
+	place-items: center;
+}
+.card_Title h1{
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: #05192D;
+}
+.card_Details{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 180px;
+}
+.card_More{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px;
+	height: fit-content;
+}
+.card_Edu p{
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	font-weight: 500;
+	color: #3F3D56;
+	line-height: 1.5rem;
+
+}
+.card_More h3{
+	font-size: 1.2rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+.card_More img{
+	width: 10px;
+	transition: all 0.6s ease ;
+
+}
+.card_More:hover img{
+	transform: translateX(8px);
+}
+
+.card #card_Avatar{
+	position: absolute;
+	width: 80px;
+	object-fit: contain;
+	top: -40px;
+	left: 30px;
+
+}
+.text_box{
+	width: 100%;
+	height: 220px;
+	display: grid;
+	place-items: center;
+}
+.text_box h3{
+	font-size: 1.3rem;
+	text-align: center;
+	color: #f6f6f6;
+	word-spacing: 5px;
 }
 .Hero_section {
 	width: 100%;
@@ -94,7 +185,6 @@ body {
 	width: 40%;
 	height: 70%;
 }
-
 @media(max-width:900px){
 	.Hero_section{
 		padding:30px;
