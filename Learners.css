@@ -29,7 +29,7 @@ html {
 	align-items: center;
 	position: fixed;
 	top: 0;
-	background-color: #3f3d56;
+	background-color: #19191a;
 	z-index: 5;
 }
 .header h1 {
@@ -37,7 +37,7 @@ html {
 	color: rgb(247, 247, 247);
 }
 body {
-	background-color: rgb(14, 14, 14);
+	background-color: rgb(0, 0, 0);
 }
 .btn {
 	outline: none;
@@ -48,7 +48,7 @@ body {
 	font-weight: 600;
 	border-radius: 5px;
 	transition: all 0.7s ease;
-	background-color: #fd8cf4;
+	background-color: rgb(236, 69, 208);
 }
 .btn:hover {
 	background-color: #03ef62;
@@ -193,24 +193,28 @@ body {
 }
 .Footer_conatiner {
 	width: 100%;
+	height: fit-content;
 	background-color: #19191a;
 	display: flex;
-	flex-direction: column;
 	justify-content: space-evenly;
-	align-items: center;
 	padding: 20px 20px;
 }
 .Footer_header {
-	letter-spacing: 2px;
+	width: 50%;
+	height: 100%;
+	letter-spacing: 1px;
 	line-height: 1.5em;
 	color: rgba(245, 245, 245, 0.788);
+	padding-right: 20px;
+}
+.Footer_header p {
+	font-size: 0.8rem;
 }
 .Footer_columns_holder {
-	margin-top: 40px;
 	width: 100%;
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 	flex-wrap: wrap;
 }
 .Footer_columns {
@@ -222,16 +226,26 @@ body {
 	letter-spacing: 2px;
 }
 .Footer_columns h1 {
-	font-size: 1.3rem;
+	font-size: 1rem;
 	color: white;
+	font-weight: 600;
 }
-.Footer_columns p {
+.Footer_columns a {
+	width: fit-content;
+	text-decoration: none;
 	font-size: 0.8rem;
 	color: rgba(245, 245, 245, 0.788);
+	transition: all 0.5s ease;
 }
+.Footer_header img {
+	width: 150px;
 
-
-
+	object-fit: contain;
+}
+.Footer_columns a:hover {
+	text-decoration: underline;
+	color: rgb(236, 69, 208);
+}
 /*------------their footer style----------------------------------*/
 
 /* footer{
@@ -353,7 +367,7 @@ hr{
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	background-color: #fd8cf4;
+	background-color: rgb(236, 69, 208);
 	display: grid;
 	place-items: center;
 	transition: all 0.5s ease;
@@ -369,11 +383,49 @@ hr{
 .Scroll a {
 	text-decoration: none;
 }
+.Privacy_holder {
+	width: 100%;
+	height:100px;
+	background-color: #19191a;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
+}
+.Privacy_links {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.Privacy_links a {
+	font-weight: 500;
+	width: fit-content;
+	text-decoration: none;
+	font-size: 0.8rem;
+	color: rgba(255, 255, 255, 0.938);
+	transition: all 0.5s ease;
+}
+.Social-media {
+	margin-right: 50px;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.Social-media img {
+	fill: white;
+}
 @media (max-width: 900px) {
 	.Hero_section {
 		padding: 30px;
 		height: 90vh;
+	}
+	.Footer_conatiner {
+		flex-direction: column;
+	}
+	.Footer_header {
+		width: 100%;
 	}
 }
 @media (max-width: 750px) {
@@ -401,11 +453,21 @@ hr{
 	.Footer_columns_holder {
 		width: 95%;
 	}
-	.Footer_columns{
-			width: 50%;
+	.Footer_columns {
+		width: 50%;
 	}
-	.Footer_columns p{
-			width: 95%;
+	.Footer_columns p {
+		width: 95%;
+	}
+	.Privacy_holder {
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	.Privacy_links {
+		width: 100%;
+	}
+	.Social-media {
+		width:50%;
 	}
 }
 @media (max-width: 400px) {
