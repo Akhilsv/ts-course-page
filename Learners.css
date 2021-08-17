@@ -213,6 +213,7 @@ body {
 	height: 70%;
 }
 .Footer_conatiner {
+	margin-top:100px;
 	width: 100%;
 	height: fit-content;
 	background-color: #19191a;
@@ -267,122 +268,83 @@ body {
 	text-decoration: underline;
 	color: rgb(236, 69, 208);
 }
-/*------------their footer style----------------------------------*/
+/* -------------------------slider-------------------------  */
+.tabs-holder {
+	width: 100%;
+	background-color: red;
+}
+.tab {
+	padding: 20px;
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(14, 14, 14);
+	color: white;
+}
+.tab h1 {
+	font-weight: 900;
+	font-size: 45px;
+	text-align: center;
+}
+.tab p {
+	width: 80%;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #f0eeffd5;
+	font-weight: 500;
+	font-size: 20px;
+}
+.tab a {
+	text-decoration: none;
+	width: 180px;
+	height: 40px;
+	background-color: #5a4fcf;
+	display: grid;
+	place-items: center;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 2px;
+	transition: all 0.5s ease;
+	font-size: 15px;
+}
+.tab a:hover {
+	background-color: #4d40e4;
+}
+.buttons-holder {
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.splide__arrow svg {
+	width: 2.5em;
+	height: 2.5em;
+}
+@media (max-width: 500px) {
+	.tab h1 {
+		font-weight: 900;
+		font-size: 30px;
+	}
+	.tab p {
+		width: 85%;
 
-/* footer{
-    width: 100%;
-    background: linear-gradient(to right, #202020, #202020);
-    color: #fff;
-    padding: 70px 0 20px;
-    border-top-left-radius: 125px;
-    font-size: 13px;
-    line-height: 20px;
+		font-size: 19px;
+	}
+	.tab a {
+		width: 130px;
+		height: 35px;
+		font-size: 15px;
+	}
+	.buttons-holder {
+		width: 80%;
+		height: 25%;
+		flex-wrap: wrap;
+		width: 100%;
+	}
 }
-.row{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.col{
-    flex-basis: 10%;
-    padding: 10px;
-}
-.logo{
-    width: 80px;
-    margin-bottom: 30px;
-}
-.col h3{
-    width: fit-content;
-    margin-bottom: 40px;
-    position: relative;
-}
-.email-id{
-    width: fit-content;
-    border-bottom: 1px solid #ccc;
-    margin: 20px 0;
-}
-ul li{
-    list-style: none;
-    margin-bottom: 12px;
-}
-ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-form{
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-items: space-between;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 50px;
-}
-form .far{
-    font-size: 18px;
-    margin-right: 150px;
-}
-form input{
-    width: 100%;
-    background: transparent;
-    color: #ccc;
-    border: 0;
-    outline: none;
-}
-form button{
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-form button .fas{
-    font-size: 16px;
-    color: #fff;
-}
-.social-icons .fab{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: #000;
-    background: #fff;
-    margin-right: 15px;
-    cursor: pointer;
-}
-hr{
-    width: 90%;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-    margin: 20px auto;
-}
-.copyright{
-    text-align: center;
-}
-
-@keyframes moving{
-    0%{
-        left: -20px;
-    }
-    100%{
-        left: 100px;
-    }
-}
-
-@media (max-width : 700px){
-      footer{
-          bottom: unset;   
-    }
-    .col{
-        flex-basis: 100%;
-    }
-    .col :nth-child(2), .col:nth-child(3){
-        flex-basis: 100%;
-    }
-} */
 
 .Scroll {
 	width: 50px;
