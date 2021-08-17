@@ -296,6 +296,7 @@ body {
 	color: #f0eeffd5;
 	font-weight: 500;
 	font-size: 20px;
+	padding:10px;
 }
 .tab a {
 	text-decoration: none;
@@ -336,7 +337,7 @@ body {
 	.tab a {
 		width: 130px;
 		height: 35px;
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.buttons-holder {
 		width: 80%;
