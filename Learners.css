@@ -271,7 +271,6 @@ body {
 /* -------------------------slider-------------------------  */
 .tabs-holder {
 	width: 100%;
-	background-color: red;
 }
 .tab {
 	padding: 20px;
@@ -282,7 +281,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	background-color: rgb(14, 14, 14);
-	color: white;
+	color: white;rgb(26, 26, 26)
 }
 .tab h1 {
 	font-weight: 900;
