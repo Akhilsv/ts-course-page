@@ -5,14 +5,20 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="./style.css" rel="stylesheet" />
-		<link
+		<link href="./Time_line.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+		  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+		<!-- <link
 			rel="text/css"
 			href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
 		/>
 		<link
 			rel="text/css"
 			href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
-		/>
+		/> -->
+		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 		<title>Document</title>
 	</head>
 	<body>
@@ -107,7 +113,71 @@
 			</div>
 
 			<!-- ----------------2)Timeline-section------------- ------->
-
+			<h1 class="Time_line_Title">START YOUR JOURNEY</h1>
+ <div class="container">
+            <div class="timeline">
+                <div class="timeline-container primary" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-title"><span class="badge">HTML 5</span> - Full Stack</h4>
+                        <p>HTML is the basic and must have skill-set for every web developer. It is used and extended by various other technologies. To be completely able to understand how things work in web development, you should develop an understanding of HTML</p>
+                        <p class="timeline-subtitle">1 Hours Ago</p>
+                    </div>
+                </div>
+                <div class="timeline-container danger" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-title"><span class="badge">CSS 3</span> - Full Stack</h4>
+                        <p>CSS is another important language amongst the web development trifecta. It will help you style, plan a layout and control the behaviour and look and feel of the web apps that you build.</p>
+                        <p class="timeline-subtitle">2 Hours Ago</p>
+                    </div>
+                </div>
+                <div class="timeline-container success" data-aos="fade-up">
+                    <div class="timeline-icon">
+                       <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-title"><span class="badge">JavaScript</span> - Full Stack</h4>
+                        <p>The third one amongst the must learn trifecta, Js is present in about 90% of the internet. To make sense of what you’re doing and to design and build new web apps, this language is used predominantly, and it is indispensable</p>
+                        <p class="timeline-subtitle">6 Hours Ago</p>
+                    </div>
+                </div>
+                <div class="timeline-container warning" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-title"><span class="badge">ReactJS</span> - Full Stack</h4>
+                        <p>Reactjs is the best and most popular framework for front-end development. An integral part of the MERN stack, its community is great, and the demand for reactjs specialists is only increasing day-by-day. React is great for Rapid app development, SPAs and for creating awesome responsive and interactive web apps</p>
+                        <p class="timeline-subtitle">1 Day Ago</p>
+                    </div>
+                </div>
+                <div class="timeline-container" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-title"><span class="badge">Node JS</span> - Full Stack</h4>
+                        <p>Nodejs is a great skill to have. It is JS based, and it completes the javascript full stack experience. It is a backend skill, which is in demand and pays well</p>
+                        <p class="timeline-subtitle">3 Days Ago</p>
+                    </div>
+                </div>
+                <div class="timeline-container info" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="timeline-body">
+                        <h4 class="timeline-title"><span class="badge">MongoDB</span> - Full Stack</h4>
+                        <p>This is a data driven schema-less NoSql database. It is a great tool to know. The syntax is very similar to javascript making it much easier to learn. You can use this for projects of any size and is also very easy to scale up or down depending on your requirements</p>
+                        <p class="timeline-subtitle">4 Days Ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 			<!-- ----------------3)Authors-section---------- ------------->
 			<div class="author_section">
 				<div class="author_section_title">
@@ -115,7 +185,7 @@
 				</div>
 				<div class="glide">
 					<div class="glide__track" data-glide-el="track">
-						<div class="authors_holder ">
+						<div class="owl-carousel authors_holder ">
 							<div class="glide__slide authors_card">
 								<div class="author_profile_pic">
 									<img src='./assets/Avatar.svg' alt="person"/>
@@ -123,13 +193,21 @@
 								<h1>Saketh</h1>
 								<a href="##"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" id="link"  alt="person"/> </a>
 							</div>
-							<div class="glide__slide authors_card">
+								<div class="glide__slide authors_card">
 								<div class="author_profile_pic">
 									<img src='./assets/Avatar.svg' alt="person"/>
 								</div>
 								<h1>Saketh</h1>
 								<a href="##"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" id="link"  alt="person"/> </a>
-							</div>
+							</div>	<div class="glide__slide authors_card">
+								<div class="author_profile_pic">
+									<img src='./assets/Avatar.svg' alt="person"/>
+								</div>
+								<h1>Saketh</h1>
+								<a href="##"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" id="link"  alt="person"/> </a>
+							</div>	
+						
+							
 						</div>
 					</div>
 				</div>
@@ -300,12 +378,21 @@
 		</div>
 
 		<script src="app.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-		<!-- <script>
-			new Glide('.glide', {
-				type: 'carousel',
-				startAt: 0,
-			}).mount();
-		</script> -->
+	<!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+<script>
+  new Glide('.glide').mount()
+</script> -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+</script>
 	</body>
 </html>
