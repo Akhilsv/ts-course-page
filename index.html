@@ -17,8 +17,9 @@
 			rel="text/css"
 			href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
 		/> -->
-		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+		<link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+
 		<title>Document</title>
 	</head>
 	<body>
@@ -183,9 +184,9 @@
 				<div class="author_section_title">
 					<h1>Verified and Trusted by</h1>
 				</div>
-				<div class="glide">
-					<div class="glide__track" data-glide-el="track">
-						<div class="owl-carousel authors_holder ">
+				
+					
+						<div class="owl-carousel owl-theme authors_holder ">
 							<div class="glide__slide authors_card">
 								<div class="author_profile_pic">
 									<img src='./assets/Avatar.svg' alt="person"/>
@@ -209,10 +210,10 @@
 						
 							
 						</div>
-					</div>
-				</div>
-			</div>
-
+					
+			
+			
+</div>
 			<!-- ---------------4)Ready-to-kickstart-section------------ -->
 			<div class="career_handbook">
 				<button>
@@ -387,12 +388,28 @@
   <script>
     AOS.init();
   </script>
-<script src="jquery.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
-<script>
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+<script type="text/javascript">
+$('.owl-carousel').owlCarousel({
+   loop:true,
+   center: true,
+  nav: true,
+navText: ["<i class='fa fa-arrow-left' aria-hidden='true'></i>","<i class='fa fa-arrow-left' aria-hidden='true'></i>"],
+  
+   responsive:{
+     0:{
+       items:1
+     },
+     600:{
+       items:3
+     },
+     1000:{
+       items:5
+     }
+   }
+ });
 </script>
 	</body>
 </html>

@@ -9,11 +9,30 @@
 .page_body {
 	width: 100%;
 	min-height: 100vh;
-	background-color: #030303;
+	background-color: #dadada;
 	position: relative;
 }
 body {
-	background-color: #030303;
+	background-color: #f0e4e4;
+}
+/*-------------owl--------------*/
+.owl-nav button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.owl-prev {
+    right: 25px;
+}
+
+.owl-next {
+    left: 25px;
+}
+
+.owl-nav button i {
+    font-size: 50px;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /* ----------------Header------------------- */
 .dropMenu {
@@ -396,10 +415,9 @@ body {
 	text-align: left;
 }
 .authors_holder {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+	
+	background-color: #949494;
+	
 }
 .authors_card {
 	margin-right: 16px;
@@ -483,8 +501,7 @@ body {
 .career_handbook button:hover {
 	background-color: #c0c0c0;
 }
-.career_handbook button span {
-}
+
 .kickstart_holder {
 	width: 100%;
 	margin-top: 30px;
