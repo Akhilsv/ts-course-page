@@ -10,19 +10,21 @@
 	text-align: center;
 	font-size: 52px;
 	letter-spacing: 2px;
+	height:140px;
 	position: relative;
+	display: grid;
+	place-items: center;
 }
-@media(max-width:700px){
-	.Time_line_Title{
-	font-size: 20px;
+@media (max-width: 700px) {
+	.Time_line_Title {
+		font-size: 20px;
 	}
-	
 }
 
 .container {
 	max-width: 750px;
 	margin: 50px auto;
-    min-height: 100%;
+	min-height: 100%;
 }
 
 p {
@@ -52,8 +54,6 @@ p {
 	margin-bottom: 2.5rem;
 }
 .timeline .timeline-container .timeline-icon {
-
-	
 	position: absolute;
 	left: -88px;
 	top: 4px;
