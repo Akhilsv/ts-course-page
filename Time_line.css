@@ -6,20 +6,17 @@
 }
 
 .Time_line_Title {
-	color: #fff;
+	color: rgb(0, 0, 0);
 	text-align: center;
 	font-size: 52px;
 	letter-spacing: 2px;
 	position: relative;
 }
-.Time_line_Title::before {
-	content: '';
-	width: 250px;
-	height: 3px;
-	background-color: #fd5d93;
-	position: absolute;
-    bottom: 0;
-    left: 50%;
+@media(max-width:700px){
+	.Time_line_Title{
+	font-size: 20px;
+	}
+	
 }
 
 .container {
@@ -55,6 +52,8 @@ p {
 	margin-bottom: 2.5rem;
 }
 .timeline .timeline-container .timeline-icon {
+
+	
 	position: absolute;
 	left: -88px;
 	top: 4px;

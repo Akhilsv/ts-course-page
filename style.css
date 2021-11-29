@@ -17,22 +17,22 @@ body {
 }
 /*-------------owl--------------*/
 .owl-nav button {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
 }
 
 .owl-prev {
-    right: 25px;
+	right: 25px;
 }
 
 .owl-next {
-    left: 25px;
+	left: 25px;
 }
 
 .owl-nav button i {
-    font-size: 50px;
-    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	font-size: 50px;
+	text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /* ----------------Header------------------- */
 .dropMenu {
@@ -251,6 +251,8 @@ body {
 }
 /* -----------------1)Hero-section-------------------- */
 .hero_section {
+	max-width: 1400px;
+	max-height: 760px;
 	width: 90%;
 	margin: 80px auto 100px auto;
 	padding: 10px;
@@ -262,7 +264,7 @@ body {
 	color: #fff;
 }
 .hero_body {
-	min-height: 40vh;
+	min-height: 400px;
 	width: 95%;
 	display: flex;
 	align-items: center;
@@ -279,7 +281,7 @@ body {
 }
 .course_content {
 	width: 65%;
-	min-height: 40vh;
+	min-height: 350px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -337,6 +339,9 @@ body {
 }
 
 @media (max-width: 1000px) {
+	.hero_section {
+		max-height: 1400px;
+	}
 	.course_content {
 		width: 100%;
 		transform: translateY(0%);
@@ -415,9 +420,7 @@ body {
 	text-align: left;
 }
 .authors_holder {
-	
 	background-color: #949494;
-	
 }
 .authors_card {
 	margin-right: 16px;
@@ -503,10 +506,12 @@ body {
 }
 
 .kickstart_holder {
+	max-width: 1400px;
 	width: 100%;
 	margin-top: 30px;
-	height: 60vh;
+	height: 500px;
 	display: flex;
+	margin: 0 auto;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -570,7 +575,7 @@ body {
 /* - ---------------5)FAQ-section---------------------  */
 .faq_section {
 	width: 100%;
-	min-height: 100vh;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
