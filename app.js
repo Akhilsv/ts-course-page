@@ -47,3 +47,4 @@ window.addEventListener('scroll', () => {
  Close.addEventListener('click', () => {
 		DropMenu.classList.remove('MenuAnimation');
  });
+ 

@@ -5,19 +5,20 @@
 	box-sizing: border-box;
 }
 
-.Time_line_Title {
-	color: rgb(0, 0, 0);
-	text-align: center;
-	font-size: 52px;
-	letter-spacing: 2px;
-	height:140px;
-	position: relative;
-	display: grid;
-	place-items: center;
+.timeline_title {
+	height: 150px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
 }
+
 @media (max-width: 700px) {
 	.Time_line_Title {
 		font-size: 20px;
+	}
+	.timeline_title {
+		height: max-content;
+		align-items: center;
 	}
 }
 
