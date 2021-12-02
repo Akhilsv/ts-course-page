@@ -7,10 +7,15 @@
 
 .timeline_title {
 	height: 150px;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
+	width: 100%;
+	position: relative;
+	display: grid;
+	place-items: center;
 }
+.center {
+	width: 700px;
+}
+
 
 @media (max-width: 700px) {
 	.Time_line_Title {
@@ -81,6 +86,26 @@ p {
 	border-radius: 3px;
 	padding: 20px 20px 15px;
 	box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+.timeline-button {
+	border: 1px solid #00BF9A;
+	outline: none;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 100px;
+	height: 30px;
+	border-radius: 3px;
+	background-color: transparent;
+	color: #00BF9A;
+	transition-duration: 0.5s;
+	
+}
+.timeline-button:hover {
+	background-color: #00BF9A;
+	color: #ffffff;
+
 }
 .timeline .timeline-container .timeline-body:before {
 	content: '';
