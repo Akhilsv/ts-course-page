@@ -6,9 +6,8 @@ showMoreFaqBtn.addEventListener('click', () => {
 			i.style.display = 'none';
 			showMoreFaqBtn.innerHTML = 'More Lessons';
 		} else {
-            i.style.display = 'flex';
+			i.style.display = 'flex';
 			showMoreFaqBtn.innerHTML = 'Less Lessons';
-            
 		}
 	});
 });
@@ -37,14 +36,31 @@ window.addEventListener('scroll', () => {
 	}
 });
 
+const Close = document.querySelector('.Close');
+const DropMenu = document.querySelector('.dropMenu');
+ham.addEventListener('click', () => {
+	DropMenu.classList.add('MenuAnimation');
+	console.log('sdsd');
+});
+Close.addEventListener('click', () => {
+	DropMenu.classList.remove('MenuAnimation');
+});
 
- const Close = document.querySelector('.Close');
- const DropMenu = document.querySelector('.dropMenu');
- ham.addEventListener('click', () => {
-		DropMenu.classList.add('MenuAnimation');
-		console.log('sdsd');
- });
- Close.addEventListener('click', () => {
-		DropMenu.classList.remove('MenuAnimation');
- });
- 
+
+const Profile = document.querySelector('.avatar');
+const Profile_dropDown = document.querySelector('.profile_dropDown');
+Profile.addEventListener('click', () => {
+	if (Profile_dropDown.style.opacity === '1') {
+		Profile_dropDown.style.opacity = '0';
+		Profile_dropDown.style.pointerEvents = 'none';
+	} else {
+		Profile_dropDown.style.opacity = '1';
+		Profile_dropDown.style.pointerEvents = 'all';
+	}
+});
+document.addEventListener('click', function (event) {
+	var isClickInsideElement = Profile.contains(event.target);
+	if (!isClickInsideElement) {
+		Profile_dropDown.style.opacity = '0';
+	}
+});

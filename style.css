@@ -10,7 +10,7 @@
 	width: 100%;
 	min-height: 100vh;
 	background-color: #ffffff;
-	position: relative;
+	overflow-x: hidden;
 }
 body {
 	background-color: #f0e4e4;
@@ -33,6 +33,65 @@ body {
 .owl-nav button i {
 	font-size: 50px;
 	text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.avatar {
+	margin: 0 30px;
+	display: grid;
+	place-items: center;
+	height: 40px;
+	width: 40px;
+}
+.profile_dropDown {
+	width: 220px;
+	height: 250px;
+	background-color: #ffffff;
+	position: fixed;
+	top: 58px;
+	right: 2px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-direction: column;
+	transition-duration: 0.5s;
+	z-index: 5;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	opacity: 0;
+	pointer-events: none;
+}
+.profile_dropDown_item {
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	cursor: pointer;
+	z-index: 555;
+	text-decoration: none;
+	color: #000;
+	border-left: solid 5px transparent;
+	font-weight: 500;
+}
+.profile_dropDown_item:hover {
+	border-left: solid 5px rgb(236, 69, 208);
+	background-color: #e0e0e0;
+	color: rgb(236, 69, 208);
+	font-weight: 600;
+}
+.profile_dropDown_item span {
+	margin: 10px;
+}
+.profile_dropDown_item span img {
+	width: 22px;
+	object-fit: contain;
+}
+.avatar img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.avatar:hover img {
+	border: 2px solid rgb(236, 69, 208);
 }
 /* ----------------Header------------------- */
 .dropMenu {
@@ -160,6 +219,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	overflow: hidden;
+	position: relative;
 }
 .logo {
 	width: 100px;
@@ -514,7 +574,7 @@ body {
 	color: white;
 	margin-right: 20px;
 }
-.career_handbook span img{
+.career_handbook span img {
 	width: 100%;
 	object-fit: contain;
 }
