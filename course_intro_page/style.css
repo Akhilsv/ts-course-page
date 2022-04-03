@@ -298,6 +298,12 @@ body {
   padding: 30px;
 }
 
+@media (max-width: 800px) {
+  .learn_section {
+    padding: 10px;
+  }
+}
+
 .learn_section .title h1 {
   font-weight: 500;
   color: #616370;
@@ -313,6 +319,16 @@ body {
   padding: 30px;
 }
 
+@media (max-width: 800px) {
+  .learn_section .learn_details {
+    padding: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .learn_section .learn_details .text_zone {
   width: 50%;
   -webkit-box-orient: vertical;
@@ -320,6 +336,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 50px;
+}
+
+@media (max-width: 800px) {
+  .learn_section .learn_details .text_zone {
+    padding: 0px;
+    width: 100%;
+  }
 }
 
 .learn_section .learn_details .text_zone p {
@@ -338,6 +361,12 @@ body {
   place-items: center;
 }
 
+@media (max-width: 800px) {
+  .learn_section .learn_details .cetificate {
+    width: 95%;
+  }
+}
+
 .learn_section .learn_details .cetificate .image_section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,6 +375,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.learn_section .learn_details .cetificate .image_section img {
+  width: 100%;
+  height: 100%;
 }
 
 .learn_section .learn_details .cetificate .image_section span {
@@ -358,6 +392,12 @@ body {
   padding: 4rem;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 1rem;
+  }
 }
 
 .container h2 {
@@ -472,8 +512,16 @@ body {
 }
 
 .swiper {
-  width: 100%;
-  height: 350px;
+  width: 85%;
+  height: 400px;
+  margin: 40px auto;
+}
+
+@media (max-width: 700px) {
+  .swiper {
+    width: 95%;
+    margin: 20px auto;
+  }
 }
 
 .Testimonials_card {
@@ -495,6 +543,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 20px;
 }
 
 .Testimonials_card p {
@@ -515,5 +565,39 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100px;
+}
+
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-bottom: solid 2px #3910db00;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: #ccc;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: solid 2px #3810db;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

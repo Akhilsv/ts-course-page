@@ -22,9 +22,20 @@
 		</div>
 		<div class="overview_section">
 			<div class="title">
-				<h1>Overview Syllabus</h1>
+				<div class="tab">
+					<button
+						class="tablinks"
+						onclick="openCity(event, 'London')"
+						id="defaultOpen"
+					>
+						overview
+					</button>
+					<button class="tablinks" onclick="openCity(event, 'Paris')">
+						Syllabus
+					</button>
+				</div>
 			</div>
-			<div class="overview_zone">
+			<div class="overview_zone tabcontent" id="London">
 				<div class="paragraph_section">
 					<div class="paragraph">
 						<div class="title">
@@ -73,6 +84,9 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="overview_zone tabcontent" id="Paris">
+				<h1>Syllabus section</h1>
 			</div>
 		</div>
 		<div class="courese_list_section">
@@ -295,8 +309,19 @@
 			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
 				<!-- Slides -->
+
 				<div class="swiper-slide">
-					<div class="Testimonials_card"></div>
+					<div class="Testimonials_card">
+						<p>
+							I know from first-hand experience that you can go in knowing zero,
+							nothing, and just get a grasp on everything as you go and start
+							building right away.
+						</p>
+						<div class="image_box">
+							<img src="/assets/python.png" alt="profile" />
+							<p>Alan Bjiu</p>
+						</div>
+					</div>
 				</div>
 				<div class="swiper-slide">
 					<div class="Testimonials_card">
@@ -305,17 +330,40 @@
 							nothing, and just get a grasp on everything as you go and start
 							building right away.
 						</p>
-                        <div class="image_box">
-                            <img src="/assets/python.png" alt="profile" >
-                            <p>Alan Bjiu</p>
-                        </div>
+						<div class="image_box">
+							<img src="/assets/python.png" alt="profile" />
+							<p>Alan Bjiu</p>
+						</div>
 					</div>
 				</div>
-				<div class="swiper-slide"><div class="Testimonials_card"></div></div>
-				...
+				<div class="swiper-slide">
+					<div class="Testimonials_card">
+						<p>
+							I know from first-hand experience that you can go in knowing zero,
+							nothing, and just get a grasp on everything as you go and start
+							building right away.
+						</p>
+						<div class="image_box">
+							<img src="/assets/python.png" alt="profile" />
+							<p>Alan Bjiu</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="Testimonials_card">
+						<p>
+							I know from first-hand experience that you can go in knowing zero,
+							nothing, and just get a grasp on everything as you go and start
+							building right away.
+						</p>
+						<div class="image_box">
+							<img src="/assets/python.png" alt="profile" />
+							<p>Alan Bjiu</p>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!-- If we need pagination -->
-			<div class="swiper-pagination"></div>
 
 			<!-- If we need navigation buttons -->
 			<div class="swiper-button-prev"></div>
@@ -408,6 +456,22 @@
 		<!----------------------------------- -->
 	</body>
 	<script>
+		document.getElementById('defaultOpen').click();
+
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName('tabcontent');
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = 'none';
+			}
+			tablinks = document.getElementsByClassName('tablinks');
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(' active', '');
+			}
+			document.getElementById(cityName).style.display = 'flex';
+			evt.currentTarget.className += ' active';
+		}
+
 		//----------------------FAQ section
 		const items = document.querySelectorAll('.accordion button');
 
@@ -432,8 +496,8 @@
 		const swiper = new Swiper('.swiper', {
 			// Optional parameters
 			loop: true,
-			slidesPerView: 3,
-			spaceBetween: 30,
+			slidesPerView: 4,
+			slidesPerGroup: 1,
 			// If we need pagination
 			pagination: {
 				el: '.swiper-pagination',
@@ -445,10 +509,29 @@
 				prevEl: '.swiper-button-prev',
 			},
 
-			// And if we need scrollbar
-			scrollbar: {
-				el: '.swiper-scrollbar',
-			},
+			breakpoints: {
+					350: {
+						slidesPerView: 1,
+						spaceBetween: 20,
+						slidesPerGroup: 1,
+					},
+					650: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+						slidesPerGroup: 1,
+					},
+					940: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+						slidesPerGroup: 1,
+					},
+					1024: {
+						slidesPerView: 3,
+						spaceBetween: 20,
+						slidesPerGroup: 1,
+
+					},
+				},
 		});
 	</script>
 </html>
