@@ -843,6 +843,20 @@
 			var splide = new Splide('.splide', {
 				drag: 'free',
 				perPage: 6,
+				breakpoints: {
+					1024: {
+						perPage: 3,
+					},
+					767: {
+						perPage: 2,
+					},
+					640: {
+						perPage: 1,
+					},
+					440: {
+						perPage: 1,
+					},
+				},
 			});
 
 			splide.mount();

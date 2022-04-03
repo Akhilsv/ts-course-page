@@ -517,7 +517,7 @@ body {
 }
 .splide {
 	width: 90% !important;
-	margin: 0 auto !important;
+	margin: 20px auto !important;
 }
 .splide__list {
 	align-items: center !important;
@@ -527,7 +527,7 @@ body {
 }
 .authors_card {
 	margin-right: 16px !important;
-	width: 180px !important;
+	width: 200px !important;
 	height: 220px;
 	position: relative;
 	display: flex;
@@ -1061,7 +1061,7 @@ body {
 	height: 400px;
 	margin: 40px auto;
 }
-/* @media (max-width: 700px) {
+@media (max-width: 700px) {
 	.swiper {
 		width: 85%;
 		min-height: 500px;
@@ -1074,17 +1074,18 @@ body {
 		flex-direction: column;
 		width: 250px;
 		justify-content: space-around;
+		padding: 10px 0;
 	}
-	
+
 	.swiper_slide_left {
 		height: 100px !important;
 		width: 200px !important;
 	}
 	.swiper_slide_right {
-		height: 100%;
+		height: 90%;
 		width: 90% !important;
 	}
-} */
+}
 .swiper-slide {
 	width: 200px;
 	margin-right: 20px;
