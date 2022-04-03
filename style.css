@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
 	padding: 0;
@@ -11,6 +11,7 @@
 	min-height: 100vh;
 	background-color: #ffffff;
 	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
 }
 body {
 	background-color: #f0e4e4;
@@ -499,8 +500,8 @@ body {
 	text-align: left;
 }
 .splide {
-	width: 90% !important;
-	margin: 20px auto !important;
+	max-width: 90% !important;
+	overflow: hidden;
 }
 .splide__list {
 	align-items: center !important;
@@ -520,7 +521,7 @@ body {
 	align-items: center;
 	padding: 20px;
 	box-shadow: 0 4px 10px rgb(0 0 0 / 16%);
-	border: 0.5px solid #f1f1f1;
+	border: 0.5px solid #b9b9b9;
 	border-radius: 4px;
 	background-color: #fff;
 }
@@ -1124,4 +1125,24 @@ body {
 .swiper-button-prev:after {
 	font-size: 1rem !important;
 	font-weight: 800;
+}
+
+.more_section {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.24);
+	top: 0;
+	left: 0;
+	display: none;
+	place-items: center;
+
+	
+}
+.max_width_section {
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+	display: grid;
+	place-items: center;
 }

@@ -188,8 +188,9 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="carrer-desk">
-                            Career Paths
+                        <li >
+                            <p class="carrer-desk">Career Paths</p>
+                            
                         </li>
                         <li class="3-dropdown">
                             <p class="resource-desk">Resources ⌵</p>
@@ -1433,6 +1434,8 @@
 				</div>
 			</div>
 			<!-- ----------------3)Authors-section---------- ------------->
+<div class="max_width_section">
+
 
 			<div class="splide">
 				<div class="splide__track authors_holder">
@@ -1557,6 +1560,7 @@
 					</ul>
 				</div>
 			</div>
+            </div>
 			<!-- ---------------4)Ready-to-kickstart-section------------ -->
 			<div class="career_handbook">
 				<button>
@@ -1897,7 +1901,35 @@
         Reserved.
     </div>
 			</div>
-
+			<!--------- view-details-popup ------------>
+			<div class="more_section" id="conaitnerCheck">
+			<div class="more_container">
+				<div class="more_item">
+					<p id="red">Report</p>
+				</div>
+				<div class="more_item">
+					<p id="red">unfollow</p>
+				</div>
+				<div class="more_item">
+					<p>go to post</p>
+				</div>
+				<div class="more_item">
+					<p>tagged account</p>
+				</div>
+				<div class="more_item" onclick="shareToBox()">
+					<p>share to..</p>
+				</div>
+				<div class="more_item">
+					<p>copy to</p>
+				</div>
+				<div class="more_item">
+					<p>embed</p>
+				</div>
+				<div class="more_item">
+					<p>cancel</p>
+				</div>
+			</div>
+		</div>
 	</body>
 {% block script %}
 {% endblock script %}
@@ -1920,7 +1952,12 @@
 		<script>
 			//-------------- View Details Popup function
 			const showDetailsPopUp = () => {
-				console.log('clicking');
+				const moreSection = document.querySelector('.more_section');
+				if (moreSection.style.display == 'grid') {
+					moreSection.style.display = 'none';
+				} else {
+					moreSection.style.display = 'grid';
+				}
 			};
 			const swiper = new Swiper('.swiper', {
 				// Optional parameters
