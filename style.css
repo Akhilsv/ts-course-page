@@ -1170,12 +1170,13 @@ body {
 	font-weight: 500;
 }
 .more_close {
-	position: absolute;
-	top: 20px;
-	right: 20px;
+	position: fixed;
+	top: calc((100vh - 91vh));
+	right: calc((100vw - 88vw));
 	font-weight: 600;
 	font-size: 1.3rem;
 	cursor: pointer;
+	z-index: 888;
 }
 
 .max_width_section {
