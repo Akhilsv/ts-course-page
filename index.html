@@ -1928,15 +1928,68 @@
 			<!-- -------------1)Hero-section--------------- -->
 			<div class="more_section" id="conaitnerCheck">
 				<div class="more_container">
-                    <h1 class="more_close" onclick="showDetailsPopUp()">X</h1>
+					<h1 class="more_close" onclick="showDetailsPopUp()">X</h1>
 					<h1 class="more_container_title">How to become Frontend Developer</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur asdgsdagsdga gsdag </p>
-                    <div class="more_banner_holder">
-                        <img src="./assets/photo.jpg" alt="">
-                    </div>
-                    <div class="more_description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure aliquid dolor laborum, suscipit laboriosam totam a! Dicta aliquam, eos vitae iusto accusantium ratione inventore praesentium repudiandae sed quaerat voluptatum.</p>
-                    </div>
+					<p>Lorem ipsum dolor sit amet consectetur asdgsdagsdga gsdag</p>
+					<div class="more_banner_holder">
+						<img src="./assets/photo.jpg" alt="" />
+					</div>
+					<div class="more_description">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure
+							aliquid dolor laborum, suscipit laboriosam totam a! Dicta aliquam,
+							eos vitae iusto accusantium ratione inventore praesentium
+							repudiandae sed quaerat voluptatum.
+						</p>
+					</div>
+					<div class="more_description">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure
+							aliquid dolor laborum, suscipit laboriosam totam a! Dicta aliquam,
+							eos vitae iusto accusantium ratione inventore praesentium
+							repudiandae sed quaerat voluptatum.
+						</p>
+					</div>
+					<div class="more_description">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure
+							aliquid dolor laborum, suscipit laboriosam totam a! Dicta aliquam,
+							eos vitae iusto accusantium ratione inventore praesentium
+							repudiandae sed quaerat voluptatum.
+						</p>
+					</div>
+					<div class="more_description">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure
+							aliquid dolor laborum, suscipit laboriosam totam a! Dicta aliquam,
+							eos vitae iusto accusantium ratione inventore praesentium
+							repudiandae sed quaerat voluptatum.
+						</p>
+					</div>
+					<div class="more_description">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure
+							aliquid dolor laborum, suscipit laboriosam totam a! Dicta aliquam,
+							eos vitae iusto accusantium ratione inventore praesentium
+							repudiandae sed quaerat voluptatum.
+						</p>
+					</div>
+					<div class="more_description">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure
+							aliquid dolor laborum, suscipit laboriosam totam a! Dicta aliquam,
+							eos vitae iusto accusantium ratione inventore praesentium
+							repudiandae sed quaerat voluptatum.
+						</p>
+					</div>
+					<div class="more_description">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure
+							aliquid dolor laborum, suscipit laboriosam totam a! Dicta aliquam,
+							eos vitae iusto accusantium ratione inventore praesentium
+							repudiandae sed quaerat voluptatum.
+						</p>
+					</div>
 				</div>
 			</div>
 			<div class="hero_section">
@@ -2068,7 +2121,9 @@
 								behaviour and look and feel of the web apps that you build.
 							</p>
 							<p class="timeline-subtitle">2 Hours Ago</p>
-							<button class="timeline-button" onclick="showDetailsPopUp()">view details</button>
+							<button class="timeline-button" onclick="showDetailsPopUp()">
+								view details
+							</button>
 						</div>
 					</div>
 					<div class="timeline-container success" data-aos="fade-up">
@@ -2086,7 +2141,9 @@
 								predominantly, and it is indispensable
 							</p>
 							<p class="timeline-subtitle">6 Hours Ago</p>
-							<button class="timeline-button" onclick="showDetailsPopUp()">view details</button>
+							<button class="timeline-button" onclick="showDetailsPopUp()">
+								view details
+							</button>
 						</div>
 					</div>
 					<div class="timeline-container warning" data-aos="fade-up">
@@ -2106,7 +2163,9 @@
 								apps
 							</p>
 							<p class="timeline-subtitle">1 Day Ago</p>
-							<button class="timeline-button" onclick="showDetailsPopUp()">view details</button>
+							<button class="timeline-button" onclick="showDetailsPopUp()">
+								view details
+							</button>
 						</div>
 					</div>
 					<div class="timeline-container" data-aos="fade-up">
@@ -2123,7 +2182,9 @@
 								skill, which is in demand and pays well
 							</p>
 							<p class="timeline-subtitle">3 Days Ago</p>
-							<button class="timeline-button" onclick="showDetailsPopUp()">view details</button>
+							<button class="timeline-button" onclick="showDetailsPopUp()">
+								view details
+							</button>
 						</div>
 					</div>
 					<div class="timeline-container info" data-aos="fade-up">
@@ -2142,8 +2203,17 @@
 								requirements
 							</p>
 							<p class="timeline-subtitle">4 Days Ago</p>
-							<button class="timeline-button" onclick="showDetailsPopUp()">view details</button>
+							<button class="timeline-button" onclick="showDetailsPopUp()">
+								view details
+							</button>
 						</div>
+					</div>
+					<div class="timeline-container completed" data-aos="fade-up">
+						<img
+							src="https://cdn-icons-png.flaticon.com/512/2618/2618179.png"
+							alt=""
+						/>
+						<h1>Completed</h1>
 					</div>
 				</div>
 			</div>
@@ -2636,12 +2706,18 @@
 
 	<script>
 		//-------------- View Details Popup function
+
+		const body = document.querySelector('body');
+
+
 		const showDetailsPopUp = () => {
 			const moreSection = document.querySelector('.more_section');
 			if (moreSection.style.display == 'grid') {
 				moreSection.style.display = 'none';
+				body.style.overflow = 'auto';
 			} else {
 				moreSection.style.display = 'grid';
+				body.style.overflow = 'hidden';
 			}
 		};
 		const swiper = new Swiper('.swiper', {
